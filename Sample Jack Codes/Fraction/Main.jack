@@ -1,0 +1,16 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/09/Fraction/Main.jack
+
+// Computes the sum of 2/3 and 1/5.
+class Main {
+   function void main() {
+      var Fraction a, b, c;        
+      let a = Fraction.new(2,3);  
+      let b = Fraction.new(1,5);  
+      let c = a.plus(b);  // Computes c = a + b
+      do c.print();       // Prints "13/15"
+      return;
+   }
+}

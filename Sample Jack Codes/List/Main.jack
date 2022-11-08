@@ -1,0 +1,17 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/09/List/Main.jack
+
+/** Demonstrates the use of the List abstraction. */
+class Main {
+   function void main() {
+      // Creates and uses the list (2,3,5).
+      var List v;
+      let v = List.new(5,null);
+      let v = List.new(2,List.new(3,v));
+      do v.print();        // prints 2 3 5 
+      do v.dispose();      // disposes the list
+      return;
+   }
+}
